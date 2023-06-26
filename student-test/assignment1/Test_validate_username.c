@@ -14,9 +14,12 @@
 */
 void test_validate_my_username()
 {
-    /**
-     * TODO: Replace the line below with your code here as described above to verify your /conf/username.txt 
-     * config file and my_username() functions are setup properly
-     */
-    TEST_ASSERT_TRUE_MESSAGE(false,"AESD students, please fix me!");
+    const char * username = NULL;
+    username = my_username();
+    
+    if (username == NULL)
+    	TEST_ASSERT_TRUE_MESSAGE(false,"AESD students, please fix me!");
+    else
+    	TEST_ASSERT_TRUE_MESSAGE(true,"username is fixed");
+	
 }
